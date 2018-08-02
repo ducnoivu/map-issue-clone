@@ -1,0 +1,8 @@
+{
+  "name": "gocar-app",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "pro_id": "df71cb43"
+}

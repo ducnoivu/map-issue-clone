@@ -1,0 +1,27 @@
+ion-tabs {
+    .tabbar {
+        background: white!important;
+        a, ion-icon {
+            color: $gray!important;
+        }
+        opacity: unset;
+        box-shadow: 0 -3px 3.5px #cacaca
+        // 0px 3px 3.5px #cacaca
+    }
+    .tab-button{
+        font-weight: 400 !important;
+        // border-inline-start:1px;
+        border-inline-end: 1px;
+        border-color:  #F2F2F2;
+        border-style: solid;  
+    }
+    .tab-button[aria-selected=true]{
+        background-color: white!important;
+        border-bottom: 0px;
+        .tab-button-text, ion-icon {
+            color: $black!important;
+        }  
+    }
+
+   
+}

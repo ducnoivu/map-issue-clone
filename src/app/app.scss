@@ -1,0 +1,413 @@
+// http://ionicframework.com/docs/theming/
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+body {
+    font-family: "Open Sans" !important;
+    font-weight: 400 !important;
+    color: #222222 !important;
+}
+
+.call {
+    .alert-message {
+        li {
+            text-align: left;
+            margin-left: 10px;
+        }
+    }
+}
+
+h1,
+h2,
+button {
+    font-family: "Open Sans" !important;
+}
+
+.header-icon {
+    font-size: 20px;
+    padding: 4px;
+    //border-radius: 50%;
+    // background-color: rgba(255, 255, 255, 0.9);
+    height: 30px;
+    width: 30px;
+}
+
+ion-menu {
+    .menu-inner {
+        width: 240px!important;
+    }
+    ion-content .scroll-content {
+        opacity: 0.9;
+        background-color: #F7F7F7!important;
+        //background-color: $menu-bg-color;
+        ion-list {
+            margin-top: 20px;
+            
+        }
+        ion-list ion-item {
+            // margin-left: 21px;
+            //background-color: $menu-bg-color;
+            background: none;
+            border: none;
+            color: #535861;
+            font-weight: 400;
+            font-size: 18px;
+        }
+        .tab-active {
+            color: $primary !important;
+        }
+        ion-list#list-bottom {
+            position: absolute;
+            bottom: 0
+        }
+        div.item-inner,
+        .item-block:last-child,
+        .item-block:first-child {
+            border-bottom: none !important;
+            border-top: none !important;
+        }
+    }
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+a {
+    text-decoration: none
+}
+
+.ebony {
+    color: $dark !important;
+}
+
+.g-text {
+    font-size: 16px !important;
+}
+
+.g-caption {
+    font-size: 14px !important;
+}
+
+.g-text-12 {
+    font-size: 12px !important;
+}
+
+.g-promo {
+    font-size: 11px !important;
+}
+
+.g-text-gray {
+    color: $gray !important;
+}
+
+.g-text-white {
+    color: $white !important;
+}
+
+.g-text-dark {
+    color: $dark !important
+}
+
+.g-text-primary {
+    color: $primary !important
+}
+
+.g-small {
+    font-size: 12px !important;
+}
+
+.g-very-small {
+    font-size: 10px !important;
+}
+
+.circle,
+.circle-down {
+    position: relative;
+    display: inline-block;
+    margin: -1px;
+    width: 35px;
+    height: 35px;
+    font-size: 30px;
+    top: 8px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    ion-icon {
+        margin-top: -1px;
+    }
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+ion-navbar.toolbar {
+    min-height: $toolbar-min-height !important;
+}
+
+ion-navbar {
+    .toolbar-background {
+        background: $bar-bg-color;
+    }
+}
+
+ion-footer {
+    height: $footer-min-height;
+    ion-row {
+        height: 100%;
+    }
+}
+
+ion-backdrop {
+    opacity: 0.2!important;
+}
+
+ion-content {
+    background-color: $whisper!important
+}
+
+.scroll-content {
+    background-color: $whisper !important
+}
+
+.btn-filter {
+    width: auto;
+    margin: 10px;
+    position: absolute;
+    background-color: $white;
+    color: $gray;
+    z-index: 1;
+    // ion-icon {
+    //  margin-right: 5px;
+    // }
+}
+
+.btn-filter.activated {
+    background-color: $light!important;
+}
+
+input::placeholder {
+    color: $gray
+}
+
+.my-input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid $gray;
+    color: $brightGrey;
+    width: 100%
+}
+
+ion-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 90px 1px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    // .toolbar-title {
+    //   font-weight: 00!important;
+    // }
+}
+
+.popover-class .popover-content {
+    width: 50% !important;
+    left: 25% !important;
+}
+
+.input-error {
+    border-color: $danger!important
+}
+
+.text-error {
+    color: $danger!important
+}
+
+.picker-opt {
+    color: $gray!important
+}
+
+.picker-opt-selected {
+    color: $primary!important
+}
+
+.red-point {
+    @extend .circle;
+    width: 10px;
+    height: 10px;
+    border: red;
+    background-color: red;
+    top: -8px;
+    right: 6px;
+}
+
+.red-point-menu {
+    @extend .red-point;
+    top: -2px;
+    right: 0;
+}
+
+ion-card {
+    border-radius: 4px !important;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14) !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14) !important;
+}
+
+body.keyboard-is-open .hide-on-keyboard-open {
+    display: none;
+}
+
+body.keyboard-is-open .scroll-content {
+    margin-bottom: 0 !important;
+}
+
+.txt-empty-cars {
+    color: $gray;
+    text-align: center;
+    font-size: 18px;
+}
+
+.gocar-toast {
+    opacity: 0.8;
+}
+
+.custom-loading::after {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-style: solid;
+    border-color: #5bbc9b;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    /* border-bottom: none; */
+    border-width: 5px;
+    border-radius: 50%;
+    -webkit-animation: spin .8s ease infinite;
+    animation: spin .8s ease infinite;
+}
+
+.custom-loading {
+    z-index: 9999;
+    // background: url('G-icon.png');
+    background-size: cover;
+    display: block;
+    position: absolute;
+    left: 48%;
+    top: 40%;
+    border-radius: 50%;
+}
+
+.loading-wrapper {
+    border-radius: 50%!important;
+    padding: 25px 25px!important;
+}
+
+.loading-ios .loading-wrapper {
+    background: none;
+}
+
+// .cover-spin {
+//   z-index: 9999;
+//   background: url('../assets/imgs/G-loading-white.png');
+//   background-size: cover;
+//   display: block;
+//   position: absolute;
+//   left: 0;
+//   top: 0;
+//   border-radius: 50%;
+// }
+.cover-spin {
+    z-index: 9999;
+    background: url("../assets/imgs/G-loading-white.png");
+    background-size: 39px;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.toggle-ios .toggle-icon {
+    height: $toggle-ios-height!important;
+    width: $toggle-ios-width!important;
+}
+
+.cover-spin::after {
+    content: '';
+    display: block;
+    width: 90px;
+    height: 90px;
+    border-style: solid;
+    border-color: #fff;
+    border-width: 1px;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    /* border-bottom: none; */
+    border-width: 1px;
+    border-radius: 50%;
+    -webkit-animation: spin .6s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.main:after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("http://placekitten.com/800/1200");
+    background-size: cover;
+    content: '';
+    -webkit-animation: spinX 3s infinite;
+    animation: spinX 3s infinite;
+}
+
+ion-app.cameraView,
+ion-app.cameraView ion-content,
+ion-app.cameraView .nav-decor {
+    background: transparent none !important;
+    .tabbar.show-tabbar {
+        opacity: 0;
+    }
+}
+
+.shadown {
+    .tabbar {
+        box-shadow: 0px -5px 2.5px -5px #9a9a9a
+    }
+}
